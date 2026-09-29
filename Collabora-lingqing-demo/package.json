@@ -1,0 +1,23 @@
+{
+  "name": "collabora-lingqing-demo",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "vue-tsc -b && vite build",
+    "preview": "vite preview --host 0.0.0.0"
+  },
+  "dependencies": {
+    "vue": "^3.4.25",
+    "n-designv3": "3.0.62",
+    "@nancal-icon/icons-vue": "^1.0.8",
+    "advanced-components-ui": "2.2.22-beta4"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.2.0",
+    "typescript": "^5.4.5",
+    "vite": "^6.4.3",
+    "vue-tsc": "^2.0.14"
+  }
+}

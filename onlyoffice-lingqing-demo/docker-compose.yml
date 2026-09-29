@@ -1,0 +1,18 @@
+services:
+  onlyoffice:
+    image: onlyoffice/documentserver:8.2
+    container_name: onlyoffice-lingqing-ds
+    ports:
+      - '8080:80'
+    environment:
+      JWT_ENABLED: 'false'
+      ALLOW_PRIVATE_IP_ADDRESS: 'true'
+      ALLOW_META_IP_ADDRESS: 'true'
+    restart: unless-stopped
+    volumes:
+      - onlyoffice_data:/var/www/onlyoffice/Data
+      - onlyoffice_logs:/var/log/onlyoffice
+
+volumes:
+  onlyoffice_data:
+  onlyoffice_logs:
